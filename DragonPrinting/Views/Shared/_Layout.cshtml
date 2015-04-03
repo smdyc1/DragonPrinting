@@ -24,12 +24,19 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Products", "Products", "Home")</li>
+                    <li>@Html.ActionLink("Gallery", "Gallery", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
             </div>
         </div>
     </div>
+    @*<div class="navbar-left">
+        <img class="right dragonSidebar" src="@Url.Content("~/Content/Images/DragonBlackRight.jpg")" />
+    </div>*@
     <div class="container body-content">
+        <div class="col-md-2">
+        </div>
         @RenderBody()
         <hr />
         <footer>

@@ -19,7 +19,7 @@ namespace DragonPrinting.Models
         [DataMember(Name = "Name:", IsRequired = true)]
         public string ContactName { get; set; }
 
-        [DataMember(Name = "Company Name:")]
+        [DataMember]
         public string CompanyName { get; set; }
 
         [DataMember(Name = "Phone No:", IsRequired = true)]
