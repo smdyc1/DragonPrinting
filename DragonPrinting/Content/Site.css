@@ -23,3 +23,53 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*CUSTOM CSS - OVERRIDE BOOTSTRAP.CSS*/
+body {
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  line-height: 1.428571429;
+  color: #333333;
+  background-color: #FFFEF7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.navbar-inverse {
+  background-color: lightgoldenrodyellow;
+  border-color: #D4B56A;
+}
+
+.jumbotron {
+    background-color: #FCF2C6;
+}
+
+.button-primary {
+}
+
+.DragonLogo {
+    max-height: 100px;
+}
