@@ -30,6 +30,9 @@ namespace DragonPrinting.Models
         public string Email { get; set; }
 
         [DataMember(Name = "Message:", IsRequired = true)]
+        [Required(ErrorMessage = "Please Enter Short Desciption")]
+        [StringLength(200)]
+        [DataType(DataType.MultilineText)]
         public string Message { get; set; }
 
         public ContactFormModel()

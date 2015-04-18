@@ -2,43 +2,67 @@
 @{
     ViewBag.Title = "Contact";
 }
-<div class="row">
-    <div class="col-md-6">
-        @Html.LabelFor(Model => Model.CompanyName)
-        @Html.TextBoxFor(Model => Model.CompanyName)
-    </div>
-    <div class="col-md-6">
-        <h3>Contact</h3>
-        <l>
+<div class="container" >
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Contact Us</h2>
             <p>
-                <address>
-                    <i class="fa fa-map-marker"></i>
-                    <strong> Address: </strong>
-                    7/4 Bronti Street, Mascot, NSW, 2020
-                </address>
+                @Html.TextBoxFor(Model => Model.SubjectList)
+                @Html.LabelFor(Model => Model.CompanyName)
             </p>
             <p>
-                <phone>
-                    <i class="fa fa-phone"></i>
-                    <strong> Phone: </strong>(02) 9667 3747
-                </phone>
+                @Html.TextBoxFor(Model => Model.ContactName)
+                @Html.LabelFor(Model => Model.ContactName)
             </p>
             <p>
-                <abn>
-                    <i>    </i>
-                    <strong>ABN: </strong>92 099 774 893<strong> CONFIRM ABN, ROW SPACING</strong>
-                </abn>
+                @Html.TextBoxFor(Model => Model.CompanyName)
+                @Html.LabelFor(Model => Model.CompanyName)
             </p>
-        </l>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        <h3>Quotes and Orders</h3>
-        <email>
-            <i class="fa fa-envelope"></i>
-            <strong> Email: </strong>
-            <a href="mailto:PaulM@DragonPrint.com.au">paulm@dragonprint.com.au</a>
-        </email>
+            <p>
+                @Html.TextBoxFor(Model => Model.PhoneNumber)
+                @Html.LabelFor(Model => Model.PhoneNumber)
+            </p>
+            <p>
+                @Html.TextBoxFor(Model => Model.Email)
+                @Html.LabelFor(Model => Model.Email)
+            </p>
+            <p class="">
+                @Html.TextAreaFor(Model => Model.Message)
+                @Html.LabelFor(Model => Model.Message)
+            </p>
+            <div id="submitbtn">
+                <input id="Submit" type="button" value="Submit" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h3>Address</h3>
+            <l>
+                <p>
+                    <address>
+                        <i class="fa fa-map-marker"></i>
+                        <strong> Address: </strong>
+                        7/4 Bronti Street, Mascot, NSW, 2020
+                    </address>
+                </p>
+                <p>
+                    <phone>
+                        <i class="fa fa-phone"></i>
+                        <strong> Phone: </strong>(02) 9667 3747
+                    </phone>
+                </p>
+                <p>
+                    <abn>
+                        <i>    </i>
+                        <strong>ABN: </strong>92 099 774 893<strong> CONFIRM ABN, ROW SPACING</strong>
+                    </abn>
+                </p>
+            </l>
+            <h3>Quotes and Orders</h3>
+            <email>
+                <i class="fa fa-envelope"></i>
+                <strong> Email: </strong>
+                <a href="mailto:PaulM@DragonPrint.com.au">paulm@dragonprint.com.au</a>
+            </email>
+        </div>
     </div>
 </div>
